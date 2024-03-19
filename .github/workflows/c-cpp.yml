@@ -17,5 +17,5 @@ jobs:
       
       - name: Build and run unit tests
         run: |
-          gcc -o quadratic_equation quadratic_equation.c -lm
+          gcc -o quadratic_equation test_quadratic_equation.c -lm
           ./quadratic_equation
