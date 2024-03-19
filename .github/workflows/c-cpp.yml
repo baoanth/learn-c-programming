@@ -18,7 +18,7 @@ jobs:
       run: sudo apt-get install -y build-essential libcunit1 libcunit1-dev
 
     - name: Build
-      run: gcc -o quadratic_equation test_quadratic_equation.c -lm
+      run: gcc -o quadratic_equation test_quadratic_equation.c quadratic_equation_solver.c -lm
 
     - name: Run unit tests
       run: ./quadratic_equation
