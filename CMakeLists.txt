@@ -4,10 +4,11 @@ project(MathOperationsTest)
 # Add the GoogleTest submodule
 # add_subdirectory(googletest)
 
+enable_testing()
+
 # Add subdirectories
 add_subdirectory(src)
 add_subdirectory(tests)
-
 
 
 # Link with GoogleTest and your project library
