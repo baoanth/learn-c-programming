@@ -11,3 +11,4 @@ target_link_libraries(unit_tests gtest gtest_main)
 
 # Specify the path to your project source files
 target_include_directories(unit_tests PRIVATE ../src)
+target_link_libraries(unit_tests runMain)
