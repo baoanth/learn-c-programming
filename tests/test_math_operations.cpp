@@ -17,3 +17,9 @@ TEST(MathOperationsTest, Multiplication) {
 TEST(MathOperationsTest, Division) {
     EXPECT_EQ(divide(6, 3), 2);
 }
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    // Thực hiện các công việc trước khi chạy các test case nếu cần
+    return RUN_ALL_TESTS();
+}
