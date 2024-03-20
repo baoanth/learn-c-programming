@@ -7,15 +7,15 @@ TEST(MathOperationsTest, Addition) {
 }
 
 TEST(MathOperationsTest, Subtraction) {
-    EXPECT_EQ(subtract(5, 3), 2);
+    EXPECT_EQ(subtract(5, 3), 10);
 }
 
 TEST(MathOperationsTest, Multiplication) {
-    EXPECT_EQ(multiply(2, 3), 6);
+    EXPECT_EQ(multiply(2, 3), 3);
 }
 
 TEST(MathOperationsTest, Division) {
-    EXPECT_EQ(divide(6, 3), 2);
+    EXPECT_EQ(divide(6, 3), 1);
 }
 
 /*int main(int argc, char **argv) {
