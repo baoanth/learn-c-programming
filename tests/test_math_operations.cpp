@@ -1,6 +1,6 @@
 // test_math_operations.cpp
 #include <gtest/gtest.h>
-#include "math_operations.cpp"
+#include "math_operations.h"
 
 TEST(MathOperationsTest, Addition) {
     EXPECT_EQ(add(2, 3), 8);
