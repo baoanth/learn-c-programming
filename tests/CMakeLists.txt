@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-
+enable_testing()
 # Add your test source files
 file(GLOB TEST_SOURCES "*.cpp")
 
