@@ -5,6 +5,6 @@ project(MathOperationsTest)
 file(GLOB SOURCES "*.cpp")
 
 # Add an executable target for your project
-add_executable(mathoperator ${SOURCES})
+add_executable(runMain math_operations.cpp)
 
 

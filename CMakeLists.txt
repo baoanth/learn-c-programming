@@ -10,6 +10,3 @@ add_subdirectory(tests)
 
 
 
-# Liên kết với thư viện Google Test và thư viện của bạn
-target_link_libraries(unit_tests gtest gtest_main)
-target_link_libraries(unit_tests mathoperator)
