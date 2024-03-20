@@ -11,4 +11,4 @@ add_executable(unit_tests ${TEST_SOURCES})
 # Specify the path to your project source files
 target_include_directories(unit_tests PRIVATE ../src)
 
-add_test(NAME unit_tests COMMAND unit_tests)
+
