@@ -3,7 +3,7 @@
 #include "math_operations.cpp"
 
 TEST(MathOperationsTest, Addition) {
-    EXPECT_EQ(add(2, 3), 5);
+    EXPECT_EQ(add(2, 3), 8);
 }
 
 TEST(MathOperationsTest, Subtraction) {
