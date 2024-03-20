@@ -3,7 +3,7 @@ project(MathOperationsTest)
 include(CTest)
 
 # Add the GoogleTest submodule
-add_subdirectory( ${GOOGLETEST_PROJECT_LOCATION})
+#add_subdirectory( ${GOOGLETEST_PROJECT_LOCATION})
 
 enable_testing()
 
