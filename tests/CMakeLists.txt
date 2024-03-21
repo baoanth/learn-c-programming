@@ -6,6 +6,9 @@ file(GLOB TEST_SOURCES "*.cpp")
 
 # Specify the path to your project source files
 
+set(GTEST_MAIN
+        gtest_main.cpp
+)
 
 
 # Add an executable target for your tests
