@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.13)
 project(MathOperationsTest)
 
 # Add your source files
-file(GLOB SOURCES "math_operations.cpp")
+file(GLOB SOURCES "*.cpp")
 
 #Add library
 add_library(mathoperator ${SOURCES})
