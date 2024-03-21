@@ -1,17 +1,13 @@
 cmake_minimum_required(VERSION 3.13)
-enable_testing()
-# Add your test source files
-file(GLOB TEST_SOURCES "*.cpp")
+project(MathOperationsTest)
 
-
-# Specify the path to your project source files
+include(${CMAKE_CURRENT_SOURCE_DIR}/my_lib/MyLib_AllTests.cmake)
 
 set(GTEST_MAIN
         gtest_main.cpp
 )
 
+add_executable(runUnitTests ${GTEST_MAIN} ${MYLIB_UNIT_TESTS_SOURCE_FILES})
 
-# Add an executable target for your tests
-add_executable(unit_tests ${TEST_SOURCES})
-
-target_include_directories(unit_tests PRIVATE ../src)
+# set_target_properties(runUnitTests)
+target_link_libraries(runUnitTests my_lib gtest gtest_main pthread)

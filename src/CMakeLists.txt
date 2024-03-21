@@ -1,13 +1,8 @@
 cmake_minimum_required(VERSION 3.13)
 project(MathOperationsTest)
 
-# Add your source files
-file(GLOB SOURCES "*.h")
+add_subdirectory(my_lib)
 
-#Add library
-add_library(mathoperator ${SOURCES})
-
-# Add an executable target for your project
-add_executable(runMain run_math.cpp)
-
-
+# Configure the executable that links in my_lib
+add_executable(runMain run_main.cpp)
+target_link_libraries(runMain my_lib)
